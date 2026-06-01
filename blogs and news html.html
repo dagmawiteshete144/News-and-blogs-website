@@ -1,0 +1,3474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Portal - Full Articles & Detailed Content</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            /* Primary Colors - Professional & Sophisticated */
+            --primary-dark: #0f172a;
+            /* Rich dark blue - elegant background */
+            --primary-color: #1e293b;
+            /* Navy blue - primary elements */
+            --primary-light: #334155;
+            /* Lighter navy - hover states */
+
+            /* Secondary Colors - Accents & Highlights */
+            --secondary-dark: #0369a1;
+            /* Deep ocean blue */
+            --secondary-color: #0ea5e9;
+            /* Vibrant sky blue - main accent */
+            --secondary-light: #38bdf8;
+            /* Light sky blue - highlights */
+
+            /* Supporting Colors */
+            --accent-warm: #f97316;
+            /* Vibrant orange - CTAs */
+            --accent-cool: #8b5cf6;
+            /* Royal purple - special elements */
+            --success-color: #10b981;
+            /* Emerald green - success/positive */
+            --warning-color: #f59e0b;
+            /* Amber - warnings */
+            --danger-color: #ef4444;
+            /* Crimson red - errors/danger */
+
+            /* Neutral Colors */
+            --neutral-900: #0f172a;
+            /* Deepest gray */
+            --neutral-800: #1e293b;
+            --neutral-700: #334155;
+            --neutral-600: #475569;
+            --neutral-500: #64748b;
+            --neutral-400: #94a3b8;
+            --neutral-300: #cbd5e1;
+            --neutral-200: #e2e8f0;
+            --neutral-100: #f1f5f9;
+            --neutral-50: #f8fafc;
+
+            /* Background Colors */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+
+            /* Text Colors */
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --text-tertiary: #64748b;
+            --text-light: #ffffff;
+
+            /* Category Colors - Vibrant & Distinct */
+            --agriculture-color: #16a34a;
+            /* Fresh green */
+            --health-color: #dc2626;
+            /* Medical red */
+            --education-color: #7c3aed;
+            /* Royal purple */
+            --celebrity-color: #eab308;
+            /* Gold yellow */
+            --weather-color: #0ea5e9;
+            /* Sky blue */
+            --sports-color: #ea580c;
+            /* Sports orange */
+            --business-color: #1d4ed8;
+            /* Corporate blue */
+            --tech-color: #6366f1;
+            /* Tech indigo */
+
+            /* Gradient Combinations */
+            --gradient-primary: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+            --gradient-secondary: linear-gradient(135deg, var(--secondary-dark) 0%, var(--secondary-color) 100%);
+            --gradient-accent: linear-gradient(135deg, var(--accent-warm) 0%, #fb923c 100%);
+            --gradient-premium: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+
+            /* Shadow Colors */
+            --shadow-light: rgba(15, 23, 42, 0.08);
+            --shadow-medium: rgba(15, 23, 42, 0.15);
+            --shadow-heavy: rgba(15, 23, 42, 0.25);
+
+            /* Border Colors */
+            --border-light: rgba(226, 232, 240, 0.8);
+            --border-medium: rgba(203, 213, 225, 0.8);
+            --border-dark: rgba(148, 163, 184, 0.8);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            overflow-x: hidden;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Premium Navbar - Glass Morphism */
+        .navbar {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            padding: 16px 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .navbar.scrolled {
+            padding: 12px 0;
+            background: rgba(15, 23, 42, 0.98);
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.9rem;
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-cool));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            position: relative;
+        }
+
+        .navbar-brand::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-weight: 500;
+            margin: 0 4px;
+            padding: 10px 18px !important;
+            border-radius: 10px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            font-size: 0.95rem;
+            letter-spacing: 0.2px;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+            border-radius: 1px;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: white !important;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-link:hover::before,
+        .nav-link.active::before {
+            width: 60%;
+        }
+
+        /* Premium Hero Section */
+        .hero-section {
+            background: var(--gradient-primary);
+            background-size: 200% 200%;
+            animation: gradient-shift 15s ease infinite;
+            color: white;
+            padding: 140px 0;
+            margin-top: 76px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+            animation: move-shape 20s infinite alternate;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+            animation: move-shape 25s infinite alternate-reverse;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 24px;
+            background: linear-gradient(45deg, #ffffff, #dbeafe);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-weight: 300;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        /* Premium Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+            padding-bottom: 30px;
+            position: relative;
+        }
+
+        .section-header h2 {
+            font-weight: 900;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            font-size: 3rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -1px;
+            padding-bottom: 20px;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: var(--gradient-accent);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Premium Category Cards */
+        .category-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 10px 40px var(--shadow-light);
+            height: 100%;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            position: relative;
+            z-index: 1;
+            border: 1px solid var(--border-light);
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-20px) scale(1.02);
+            box-shadow: 0 25px 60px var(--shadow-medium);
+            border-color: var(--border-medium);
+        }
+
+        .category-card:hover::before {
+            opacity: 1;
+        }
+
+        .category-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            display: inline-block;
+        }
+
+        .category-card:hover .category-icon {
+            transform: scale(1.2) rotate(8deg);
+        }
+
+        /* Premium Color-Specific Cards */
+        .agriculture-card {
+            border-top: 6px solid var(--agriculture-color);
+            background: linear-gradient(135deg, rgba(22, 163, 74, 0.03) 0%, rgba(22, 163, 74, 0.01) 100%);
+        }
+
+        .health-card {
+            border-top: 6px solid var(--health-color);
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.03) 0%, rgba(220, 38, 38, 0.01) 100%);
+        }
+
+        .education-card {
+            border-top: 6px solid var(--education-color);
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.03) 0%, rgba(124, 58, 237, 0.01) 100%);
+        }
+
+        .celebrity-card {
+            border-top: 6px solid var(--celebrity-color);
+            background: linear-gradient(135deg, rgba(234, 179, 8, 0.03) 0%, rgba(234, 179, 8, 0.01) 100%);
+        }
+
+        .weather-card {
+            border-top: 6px solid var(--weather-color);
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.03) 0%, rgba(14, 165, 233, 0.01) 100%);
+        }
+
+        .sports-card {
+            border-top: 6px solid var(--sports-color);
+            background: linear-gradient(135deg, rgba(234, 88, 12, 0.03) 0%, rgba(234, 88, 12, 0.01) 100%);
+        }
+
+        .business-card {
+            border-top: 6px solid var(--business-color);
+            background: linear-gradient(135deg, rgba(29, 78, 216, 0.03) 0%, rgba(29, 78, 216, 0.01) 100%);
+        }
+
+        .tech-card {
+            border-top: 6px solid var(--tech-color);
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.03) 0%, rgba(99, 102, 241, 0.01) 100%);
+        }
+
+        /* Premium Article Cards */
+        .article-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            height: 100%;
+            background: var(--bg-primary);
+            box-shadow: 0 8px 30px var(--shadow-light);
+            position: relative;
+            border: 1px solid var(--border-light);
+        }
+
+        .article-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px var(--shadow-medium);
+            border-color: var(--border-medium);
+        }
+
+        .article-img {
+            height: 240px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .article-card:hover .article-img {
+            transform: scale(1.08);
+        }
+
+        .article-category {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            padding: 10px 24px;
+            border-radius: 30px;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Premium Category Badges with Gloss Effects */
+        .agriculture-badge {
+            background: linear-gradient(135deg, var(--agriculture-color), #22c55e);
+        }
+
+        .health-badge {
+            background: linear-gradient(135deg, var(--health-color), #ef4444);
+        }
+
+        .education-badge {
+            background: linear-gradient(135deg, var(--education-color), #a855f7);
+        }
+
+        .celebrity-badge {
+            background: linear-gradient(135deg, var(--celebrity-color), #facc15);
+        }
+
+        .weather-badge {
+            background: linear-gradient(135deg, var(--weather-color), #38bdf8);
+        }
+
+        .sports-badge {
+            background: linear-gradient(135deg, var(--sports-color), #fb923c);
+        }
+
+        .business-badge {
+            background: linear-gradient(135deg, var(--business-color), #3b82f6);
+        }
+
+        .tech-badge {
+            background: linear-gradient(135deg, var(--tech-color), #818cf8);
+        }
+
+        /* Premium Article Detail Page */
+        .article-detail-section {
+            padding: 120px 0;
+            display: none;
+            background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .article-detail-section.active {
+            display: block;
+            animation: slideUpFadeIn 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes slideUpFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .article-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 120px 0;
+            margin-top: 76px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .article-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        }
+
+        .article-header::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .article-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+            line-height: 1.1;
+            position: relative;
+            z-index: 2;
+            letter-spacing: -0.5px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 50px;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .article-meta span:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .article-content {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .article-content h2 {
+            margin-top: 50px;
+            margin-bottom: 25px;
+            color: var(--text-primary);
+            font-weight: 800;
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .article-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .article-content h3 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 1.8rem;
+            position: relative;
+        }
+
+        .article-content p {
+            margin-bottom: 30px;
+        }
+
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            margin: 50px 0;
+            box-shadow: 0 20px 40px var(--shadow-light);
+            border: 1px solid var(--border-light);
+        }
+
+        .article-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .related-article {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: var(--bg-primary);
+            border-radius: 16px;
+            box-shadow: 0 8px 25px var(--shadow-light);
+            border: 1px solid var(--border-light);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .related-article:hover {
+            transform: translateX(15px);
+            box-shadow: 0 15px 35px var(--shadow-medium);
+            border-color: var(--border-medium);
+        }
+
+        .related-article img {
+            width: 90px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .related-article:hover img {
+            transform: scale(1.05);
+        }
+
+        .back-to-section {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            color: var(--accent-warm);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 14px 28px;
+            background: rgba(249, 115, 22, 0.08);
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(249, 115, 22, 0.2);
+            position: relative;
+            z-index: 10;
+        }
+
+        .back-to-section:hover {
+            background: rgba(249, 115, 22, 0.12);
+            transform: translateX(-8px);
+            border-color: rgba(249, 115, 22, 0.3);
+        }
+
+        /* Premium Comments Section */
+        .comment-section {
+            margin-top: 80px;
+            padding-top: 50px;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .comment {
+            padding: 25px;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            border-radius: 16px;
+            box-shadow: 0 8px 25px var(--shadow-light);
+            border-left: 4px solid var(--accent-warm);
+            transition: all 0.3s ease;
+        }
+
+        .comment:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px var(--shadow-medium);
+        }
+
+        .comment-author {
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .comment-author::before {
+            content: '👤';
+            font-size: 0.9rem;
+        }
+
+        .comment-date {
+            font-size: 0.9rem;
+            color: var(--text-tertiary);
+            margin-bottom: 15px;
+        }
+
+        /* Premium Footer */
+        .footer {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 100px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        }
+
+        .footer::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        }
+
+        .footer h5 {
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: white;
+            position: relative;
+            display: inline-block;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .footer h5::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--accent-warm);
+            border-radius: 1px;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 4px 0;
+            position: relative;
+        }
+
+        .footer a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent-warm);
+            transition: width 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: white;
+            transform: translateX(8px);
+        }
+
+        .footer a:hover::after {
+            width: 100%;
+        }
+
+        /* Premium Loading Animation */
+        .loader {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border: 3px solid rgba(14, 165, 233, 0.1);
+            border-radius: 50%;
+            border-top-color: var(--secondary-color);
+            animation: spin 1s ease-in-out infinite;
+            position: relative;
+        }
+
+        .loader::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            border-top-color: var(--accent-warm);
+            animation: spin 1.5s ease-in-out infinite;
+        }
+
+        .loader::after {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            right: -12px;
+            bottom: -12px;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            border-top-color: var(--accent-cool);
+            animation: spin 2s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            .hero-title,
+            .article-title {
+                font-size: 2.8rem;
+            }
+
+            .section-header h2 {
+                font-size: 2.2rem;
+            }
+
+            .article-meta {
+                gap: 15px;
+            }
+
+            .article-meta span {
+                font-size: 0.85rem;
+                padding: 10px 20px;
+            }
+
+            .hero-section {
+                padding: 100px 0;
+            }
+
+            .category-card {
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Premium Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--secondary-color), var(--accent-warm));
+            border-radius: 6px;
+            border: 2px solid var(--bg-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, var(--accent-warm), var(--accent-cool));
+        }
+
+        /* Selection Color */
+        ::selection {
+            background: rgba(14, 165, 233, 0.2);
+            color: var(--text-primary);
+        }
+
+        /* Focus States */
+        :focus {
+            outline: 2px solid var(--secondary-color);
+            outline-offset: 2px;
+        }
+
+        /* Premium Content Sections */
+        .content-section {
+            display: none;
+            padding: 120px 0;
+            min-height: 80vh;
+        }
+
+        .content-section.active-section {
+            display: block;
+            animation: fadeInScale 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Premium Buttons */
+        .btn-primary {
+            background: var(--gradient-secondary);
+            border: none;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.25);
+            color: white;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-accent);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(14, 165, 233, 0.35);
+        }
+
+        .btn-primary:hover::before {
+            opacity: 1;
+        }
+
+        .btn-accent {
+            background: var(--gradient-accent);
+            border: none;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 25px rgba(249, 115, 22, 0.25);
+            color: white;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-accent::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-secondary);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-accent:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(249, 115, 22, 0.35);
+        }
+
+        .btn-accent:hover::before {
+            opacity: 1;
+        }
+
+        /* Premium Card Content */
+        .card-body {
+            padding: 30px !important;
+        }
+
+        .card-title {
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .card-text {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Premium Utility Classes */
+        .text-gradient {
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-warm));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .bg-gradient {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .shadow-soft {
+            box-shadow: 0 4px 20px var(--shadow-light);
+        }
+
+        .shadow-medium {
+            box-shadow: 0 8px 40px var(--shadow-medium);
+        }
+
+        .shadow-heavy {
+            box-shadow: 0 15px 60px var(--shadow-heavy);
+        }
+
+        /* Premium Border Radius */
+        .rounded-xl {
+            border-radius: 16px;
+        }
+
+        .rounded-2xl {
+            border-radius: 20px;
+        }
+
+        .rounded-3xl {
+            border-radius: 24px;
+        }
+
+        /* Premium Transitions */
+        .transition-all {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .transition-transform {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Premium Glass Effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes move-shape {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(30px, -50px) rotate(10deg);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) rotate(-5deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        @keyframes gradient-shift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .floating-anim {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Auth Modal Styles */
+        .auth-modal .modal-content {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 24px;
+        }
+
+        .auth-modal .form-control {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white !important;
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        .auth-modal .form-control:focus {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--secondary-color);
+            box-shadow: none;
+        }
+
+        /* Favorite Icon Styles */
+        .favorite-btn {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 5;
+        }
+
+        .favorite-btn:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .favorite-btn.active {
+            color: #facc15;
+            background: rgba(250, 204, 21, 0.2);
+            border-color: rgba(250, 204, 21, 0.4);
+        }
+
+        .nav-item .btn-accent {
+            padding: 10px 25px;
+            font-size: 0.9rem;
+        }
+
+        .dropdown-menu-dark.glass {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+
+        .dropdown-item {
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: all 0.2s ease;
+        }
+
+        .dropdown-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" id="home-link"><i class="fas fa-globe-americas me-2"></i>World Pulse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-section="home"><i class="fas fa-home me-1"></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="agriculture"><i class="fas fa-seedling me-1"></i>
+                            Agriculture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="health"><i class="fas fa-heartbeat me-1"></i>
+                            Health</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="education"><i class="fas fa-graduation-cap me-1"></i>
+                            Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="business"><i class="fas fa-chart-line me-1"></i>
+                            Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="celebrity"><i class="fas fa-star me-1"></i>
+                            Celebrity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="weather"><i class="fas fa-cloud-sun me-1"></i>
+                            Weather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="sports"><i class="fas fa-running me-1"></i>
+                            Sports</a>
+                    </li>
+                    <li class="nav-item ms-lg-3" id="auth-nav-item">
+                        <button class="btn btn-accent rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fas fa-user-circle me-1"></i> Sign In
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown d-none" id="user-nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            <i class="fas fa-user-circle me-1"></i> <span id="nav-username">User</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end glass">
+                            <li><a class="dropdown-item" href="#" data-section="favorites"><i
+                                        class="fas fa-star me-2"></i>My Favorites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" id="logout-btn"><i
+                                        class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Home Section -->
+        <section id="home" class="content-section active-section">
+            <div class="hero-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="hero-title animate__animated animate__fadeInDown">Explore In-Depth Articles</h1>
+                            <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Click on any category
+                                to read detailed articles with full content, images, and discussions.</p>
+                            <div class="mt-4 animate__animated animate__fadeInUp animate__delay-2s">
+                                <button class="btn btn-light btn-lg me-3" data-section="agriculture">Agriculture
+                                    Articles</button>
+                                <button class="btn btn-outline-light btn-lg" data-section="health">Health
+                                    Articles</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="animate__animated animate__zoomIn animate__delay-1s">
+                                <img src="https://thumbs.dreamstime.com/b/shape-shiny-heart-national-flag-ethiopia-set-against-grunge-vintage-old-world-map-background-image-highlights-400313652.jpg"
+                                    class="img-fluid rounded shadow-lg floating-anim" alt="Global Portal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-5 py-5">
+                <div class="section-header">
+                    <h2>Browse Article Categories</h2>
+                    <p>Click on any category to read detailed articles with complete information</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="category-card agriculture-card text-center p-4" data-section="agriculture">
+                            <div class="category-icon text-success">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h4>Agriculture</h4>
+                            <p>Farming techniques, crop news, agricultural innovations</p>
+                            <div class="mt-3">
+                                <span class="badge bg-success">12 Articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="category-card health-card text-center p-4" data-section="health">
+                            <div class="category-icon text-danger">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h4>Health</h4>
+                            <p>Medical news, wellness tips, healthcare updates</p>
+                            <div class="mt-3">
+                                <span class="badge bg-danger">8 Articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="category-card education-card text-center p-4" data-section="education">
+                            <div class="category-icon text-purple">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Education</h4>
+                            <p>Learning resources, academic news, educational tools</p>
+                            <div class="mt-3">
+                                <span class="badge bg-purple">10 Articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="category-card business-card text-center p-4" data-section="business">
+                            <div class="category-icon text-primary">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Business</h4>
+                            <p>Market news, financial updates, entrepreneurial insights</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary">15 Articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="category-card celebrity-card text-center p-4" data-section="celebrity">
+                            <div class="category-icon text-warning">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Celebrity</h4>
+                            <p>Entertainment news, celebrity updates, latest gossip</p>
+                            <div class="mt-3">
+                                <span class="badge bg-warning">7 Articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="category-card weather-card text-center p-4" data-section="weather">
+                            <div class="category-icon text-info">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                            <h4>Weather</h4>
+                            <p>Current forecasts, climate news, weather alerts</p>
+                            <div class="mt-3">
+                                <span class="badge bg-info">5 Articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="category-card sports-card text-center p-4" data-section="sports">
+                            <div class="category-icon text-orange">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <h4>Sports</h4>
+                            <p>Live scores, match highlights, sports news</p>
+                            <div class="mt-3">
+                                <span class="badge bg-orange">9 Articles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mb-5">
+                <div class="section-header">
+                    <h2>Featured Articles</h2>
+                    <p>Most read articles across all categories</p>
+                </div>
+
+                <div class="row g-4" id="featured-articles">
+                    <!-- Featured articles loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Detail Sections (Hidden by default) -->
+        <div id="article-detail-container">
+            <!-- Articles will be dynamically loaded here -->
+        </div>
+
+        <!-- Agriculture Section -->
+        <section id="agriculture" class="content-section">
+            <div class="container my-5 py-5">
+                <div class="section-header">
+                    <h2>Agriculture Articles</h2>
+                    <p>Latest news, research, and innovations in agriculture</p>
+                </div>
+
+
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control search-input" data-category="agriculture"
+                            id="search-agriculture" placeholder="Search agriculture articles...">
+                    </div>
+                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                        <select class="form-select w-auto d-inline-block sort-select" data-category="agriculture"
+                            id="sort-agriculture">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-4" id="agriculture-articles">
+                    <!-- Articles loaded dynamically -->
+                    <div class="col-12 text-center py-5">
+                        <div class="loader"></div>
+                        <p class="mt-3">Loading agriculture articles...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health Section -->
+        <section id="health" class="content-section">
+            <div class="container my-5 py-5">
+                <div class="section-header">
+                    <h2>Health Articles</h2>
+                    <p>Medical news, wellness tips, and healthcare research</p>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control search-input" data-category="health" id="search-health"
+                            placeholder="Search health articles...">
+                    </div>
+                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                        <select class="form-select w-auto d-inline-block sort-select" data-category="health"
+                            id="sort-health">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-4" id="health-articles">
+                    <!-- Articles loaded dynamically -->
+                    <div class="col-12 text-center py-5">
+                        <div class="loader"></div>
+                        <p class="mt-3">Loading health articles...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="content-section">
+            <div class="container my-5 py-5">
+                <div class="section-header">
+                    <h2>Education Articles</h2>
+                    <p>Learning resources, academic news, and educational insights</p>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control search-input" data-category="education"
+                            id="search-education" placeholder="Search education articles...">
+                    </div>
+                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                        <select class="form-select w-auto d-inline-block sort-select" data-category="education"
+                            id="sort-education">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-4" id="education-articles">
+                    <!-- Articles loaded dynamically -->
+                    <div class="col-12 text-center py-5">
+                        <div class="loader"></div>
+                        <p class="mt-3">Loading education articles...</p>
+                    </div>
+                </div>
+
+                <!-- Quiz Container -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-lg overflow-hidden">
+                            <div class="card-header bg-gradient text-white p-4">
+                                <h3 class="mb-0"><i class="fas fa-brain me-2"></i>Test Your Knowledge</h3>
+                            </div>
+                            <div class="card-body p-4" id="education-quiz-container">
+                                <!-- Quiz Content Loaded Dynamically -->
+                                <div class="text-center">
+                                    <p class="lead mb-4">How well do you know about online learning and education
+                                        trends?</p>
+                                    <button class="btn btn-primary btn-lg rounded-pill px-5" id="start-quiz-btn">Start
+                                        Quiz</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Section -->
+        <section id="business" class="content-section">
+            <div class="container my-5 py-5">
+                <div class="section-header">
+                    <h2>Business Articles</h2>
+                    <p>Market analysis, financial news, and business strategies</p>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control search-input" data-category="business"
+                            id="search-business" placeholder="Search business articles...">
+                    </div>
+                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                        <select class="form-select w-auto d-inline-block sort-select" data-category="business"
+                            id="sort-business">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-4" id="business-articles">
+                    <!-- Articles loaded dynamically -->
+                    <div class="col-12 text-center py-5">
+                        <div class="loader"></div>
+                        <p class="mt-3">Loading business articles...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Celebrity Section -->
+        <section id="celebrity" class="content-section">
+            <div class="container my-5 py-5">
+                <div class="section-header">
+                    <h2>Celebrity Articles</h2>
+                    <p>Entertainment news, celebrity interviews, and latest gossip</p>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control search-input" data-category="celebrity"
+                            id="search-celebrity" placeholder="Search celebrity articles...">
+                    </div>
+                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                        <select class="form-select w-auto d-inline-block sort-select" data-category="celebrity"
+                            id="sort-celebrity">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-4" id="celebrity-articles">
+                    <!-- Articles loaded dynamically -->
+                    <div class="col-12 text-center py-5">
+                        <div class="loader"></div>
+                        <p class="mt-3">Loading celebrity articles...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather" class="content-section">
+            <div class="container my-5 py-5">
+                <div class="section-header">
+                    <h2>Weather Articles</h2>
+                    <p>Climate news, weather forecasts, and environmental updates</p>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control search-input" data-category="weather" id="search-weather"
+                            placeholder="Search weather articles...">
+                    </div>
+                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                        <select class="form-select w-auto d-inline-block sort-select" data-category="weather"
+                            id="sort-weather">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-4" id="weather-articles">
+                    <!-- Articles loaded dynamically -->
+                    <div class="col-12 text-center py-5">
+                        <div class="loader"></div>
+                        <p class="mt-3">Loading weather articles...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports Section -->
+        <section id="sports" class="content-section">
+            <div class="container my-5 py-5">
+                <div class="section-header">
+                    <h2>Sports Articles</h2>
+                    <p>Match analysis, athlete interviews, and sports news</p>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control search-input" data-category="sports" id="search-sports"
+                            placeholder="Search sports articles...">
+                    </div>
+                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                        <select class="form-select w-auto d-inline-block sort-select" data-category="sports"
+                            id="sort-sports">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-4" id="sports-articles">
+                    <!-- Articles loaded dynamically -->
+                    <div class="col-12 text-center py-5">
+                        <div class="loader"></div>
+                        <p class="mt-3">Loading sports articles...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorites Section -->
+        <section id="favorites" class="content-section">
+            <div class="container my-5 py-5">
+                <div class="section-header">
+                    <h2>My Favorites</h2>
+                    <p>Articles you've saved for later reading</p>
+                </div>
+
+                <div class="row g-4" id="favorites-articles">
+                    <!-- Articles loaded dynamically -->
+                    <div class="col-12 text-center py-5">
+                        <i class="fas fa-star display-4 text-muted mb-3"></i>
+                        <h4>No favorites yet</h4>
+                        <p class="text-muted">Sign in and click the star icon on articles to save them here.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4 class="mb-4">Article Portal</h4>
+                    <p>Your comprehensive source for in-depth articles across all major categories. Read, learn, and
+                        stay informed.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-4">Categories</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" data-section="agriculture">Agriculture</a></li>
+                        <li class="mb-2"><a href="#" data-section="health">Health</a></li>
+                        <li class="mb-2"><a href="#" data-section="education">Education</a></li>
+                        <li class="mb-2"><a href="#" data-section="business">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-4">&nbsp;</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" data-section="celebrity">Celebrity</a></li>
+                        <li class="mb-2"><a href="#" data-section="weather">Weather</a></li>
+                        <li class="mb-2"><a href="#" data-section="sports">Sports</a></li>
+                        <li class="mb-2"><a href="#" data-section="home">Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-4">Subscribe to Newsletter</h5>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your email" id="newsletter-email">
+                        <button class="btn btn-outline-light" type="button" id="subscribe-btn">Subscribe</button>
+                    </div>
+                    <p class="small">Get weekly article updates from all categories delivered to your inbox.</p>
+
+                    <div class="mt-4">
+                        <h5 class="mb-3">Follow Us</h5>
+                        <div class="social-links">
+                            <a href="https://t.me/" target="_blank" class="text-light me-3"><i
+                                    class="fab fa-telegram fa-lg"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="text-light me-3"><i
+                                    class="fab fa-instagram fa-lg"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank" class="text-light me-3"><i
+                                    class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank" class="text-light me-3"><i
+                                    class="fab fa-youtube fa-lg"></i></a>
+                            <a href="https://twitter.com/" target="_blank" class="text-light"><i
+                                    class="fab fa-twitter fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2023 Article Portal. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-light me-3">Privacy Policy</a>
+                    <a href="#" class="text-light">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Login Modal -->
+    <div class="modal fade auth-modal" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0 pb-0">
+                    <h3 class="modal-title font-weight-bold">Welcome Back</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="mb-3">
+                            <label class="form-label small opacity-75">Username</label>
+                            <input type="text" class="form-control" id="login-username" placeholder="Enter username"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small opacity-75">Password</label>
+                            <input type="password" class="form-control" id="login-password" placeholder="••••••••"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-accent w-100 py-3 rounded-pill mb-3">Sign In</button>
+                        <p class="text-center small opacity-75 mb-0">Don't have an account? <a href="#"
+                                class="text-info text-decoration-none" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Create Account</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade auth-modal" id="registerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0 pb-0">
+                    <h3 class="modal-title font-weight-bold">Create Account</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="register-form">
+                        <div class="mb-3">
+                            <label class="form-label small opacity-75">Full Name</label>
+                            <input type="text" class="form-control" id="reg-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small opacity-75">Username</label>
+                            <input type="text" class="form-control" id="reg-username" placeholder="johndoe123" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small opacity-75">Password</label>
+                            <input type="password" class="form-control" id="reg-password" placeholder="••••••••"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill mb-3">Create
+                            Account</button>
+                        <p class="text-center small opacity-75 mb-0">Already have an account? <a href="#"
+                                class="text-info text-decoration-none" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Sign In</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Store for user data and favorites
+        let currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+
+        // Comprehensive Article Database
+        const articleDatabase = {
+            agriculture: [
+                {
+                    id: 1,
+                    title: "Vertical Farming Revolution",
+                    excerpt: "How indoor vertical farms are changing agriculture in urban areas.",
+                    date: "2025-12-28",
+                    readTime: "5 min read",
+                    author: "Dr. Sarah Johnson",
+                    category: "Agriculture",
+                    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    featured: true,
+                    content: `
+                        <h2>The Rise of Vertical Farming</h2>
+                        <p>Vertical farming is revolutionizing agriculture by allowing crops to be grown in stacked layers, often in controlled environments like warehouses or shipping containers. This innovative approach maximizes space utilization and enables year-round crop production regardless of outdoor weather conditions.</p>
+                        
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqgn0fKo0GRYysyjMXDNF1mVqtyBZRtAodbg&s" class="img-fluid" alt="Vertical Farming">
+                        
+                        <h3>Key Benefits of Vertical Farming</h3>
+                        <p><strong>1. Space Efficiency:</strong> Vertical farms can produce up to 100 times more food per square foot compared to traditional farms.</p>
+                        <p><strong>2. Water Conservation:</strong> These systems use up to 95% less water through recirculation and precise delivery.</p>
+                        <p><strong>3. Reduced Transportation:</strong> By growing food closer to consumers, vertical farms significantly reduce carbon emissions from transportation.</p>
+                        <p><strong>4. Pesticide-Free:</strong> Controlled environments eliminate the need for chemical pesticides.</p>
+                        <p><strong>5. Year-Round Production:</strong> Crops can be grown continuously regardless of season or climate.</p>
+                        
+                        <h3>Technologies Driving the Revolution</h3>
+                        <p>Several cutting-edge technologies are making vertical farming more efficient and scalable:</p>
+                        <ul>
+                            <li><strong>LED Lighting:</strong> Customizable light spectrums optimize plant growth and energy efficiency</li>
+                            <li><strong>Hydroponics & Aeroponics:</strong> Soil-free growing systems that deliver nutrients directly to plant roots</li>
+                            <li><strong>IoT Sensors:</strong> Monitor and control temperature, humidity, pH, and nutrient levels in real-time</li>
+                            <li><strong>AI & Machine Learning:</strong> Optimize growing conditions and predict yields with data analytics</li>
+                            <li><strong>Automated Harvesting:</strong> Robotics and automation reduce labor costs and increase efficiency</li>
+                        </ul>
+                        
+                        <h3>Challenges and Future Outlook</h3>
+                        <p>While vertical farming offers numerous benefits, it also faces challenges including high initial capital costs, energy consumption for lighting and climate control, and technical complexity. However, as technology advances and energy efficiency improves, vertical farming is becoming increasingly viable for a wider range of crops.</p>
+                        
+                        <p>The future of vertical farming looks promising, with projections estimating the market will reach $12.77 billion by 2026. As urban populations continue to grow and climate change impacts traditional agriculture, vertical farming represents a crucial solution for sustainable food production.</p>
+                    `,
+                    comments: [
+                        { author: "Farmer Mike", date: "2023-10-16", comment: "This technology could revolutionize urban food security!" },
+                        { author: "Agri Researcher", date: "2023-10-17", comment: "The water savings alone make this worth pursuing on a large scale." }
+                    ]
+                },
+                {
+                    id: 2,
+                    title: "Smart Irrigation Systems",
+                    excerpt: "How IoT technology is helping farmers optimize water usage.",
+                    date: "2025-12-28",
+                    readTime: "4 min read",
+                    author: "Robert Chen",
+                    category: "Agriculture",
+                    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    featured: false,
+                    content: `
+                        <h2>Smart Irrigation: Watering with Precision</h2>
+                        <p>Smart irrigation systems represent a significant advancement in agricultural technology, helping farmers optimize water usage through data-driven decision making. These systems combine IoT sensors, weather data, and automated controls to deliver water precisely when and where it's needed.</p>
+                        
+                        <h3>How Smart Irrigation Works</h3>
+                        <p>Smart irrigation systems typically include:</p>
+                        <ul>
+                            <li>Soil moisture sensors that monitor water levels at different depths</li>
+                            <li>Weather stations that track temperature, humidity, rainfall, and evapotranspiration</li>
+                            <li>Smart controllers that process data and adjust irrigation schedules automatically</li>
+                            <li>Mobile apps for remote monitoring and control</li>
+                            <li>Zone-based watering that accounts for different crop needs and soil types</li>
+                        </ul>
+                        
+                        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Smart Irrigation">
+                        
+                        <h3>Benefits for Farmers and the Environment</h3>
+                        <p>Smart irrigation systems offer multiple advantages:</p>
+                        <p><strong>1. Water Conservation:</strong> Reduces water usage by 20-50% compared to traditional methods</p>
+                        <p><strong>2. Increased Yields:</strong> Optimal watering improves crop health and productivity</p>
+                        <p><strong>3. Cost Savings:</strong> Lower water and energy bills for pumping</p>
+                        <p><strong>4. Labor Reduction:</strong> Automated systems require less manual intervention</p>
+                        <p><strong>5. Environmental Protection:</strong> Reduces runoff and prevents overwatering</p>
+                        
+                        <h3>Case Study: California Almond Farms</h3>
+                        <p>A study of almond farms in California's Central Valley showed that implementing smart irrigation systems resulted in:</p>
+                        <ul>
+                            <li>30% reduction in water usage</li>
+                            <li>15% increase in almond yields</li>
+                            <li>40% reduction in energy costs for water pumping</li>
+                            <li>Payback period of less than 2 years on investment</li>
+                        </ul>
+                        
+                        <h3>Future Developments</h3>
+                        <p>The future of smart irrigation includes integration with satellite imagery, drone-based monitoring, and AI-powered predictive analytics. These advancements will enable even more precise water management and help address global water scarcity challenges in agriculture.</p>
+                    `,
+                    comments: []
+                },
+                {
+                    id: 3,
+                    title: "Climate-Resistant Crops",
+                    excerpt: "Developing crops that can withstand extreme weather conditions.",
+                    date: "2025-12-28",
+                    readTime: "6 min read",
+                    author: "Dr. Maria Rodriguez",
+                    category: "Agriculture",
+                    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    featured: true,
+                    content: `
+                        <h2>Breeding Crops for a Changing Climate</h2>
+                        <p>As climate change brings more frequent and severe weather events, agricultural scientists are racing to develop crop varieties that can withstand drought, flooding, extreme heat, and other climate stresses. These climate-resistant crops represent a critical adaptation strategy for global food security.</p>
+                        <a href="https://thanksgivingpoint.org/the-rise-of-vertical-farming-revolutionizing-agriculture/">go to site</a>
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Climate Resistant Crops">
+                        
+                        <h3>Types of Climate Resilience</h3>
+                        <p>Researchers are focusing on several key areas of climate resilience:</p>
+                        <p><strong>1. Drought Tolerance:</strong> Developing crops that require less water and can survive extended dry periods</p>
+                        <p><strong>2. Heat Resistance:</strong> Breeding varieties that maintain productivity at higher temperatures</p>
+                        <p><strong>3. Flood Tolerance:</strong> Creating crops that can survive temporary waterlogging</p>
+                        <p><strong>4. Salt Tolerance:</strong> Developing plants that can grow in saline soils</p>
+                        <p><strong>5. Pest & Disease Resistance:</strong> Enhancing natural defenses against emerging threats</p>
+                        
+                        <h3>Scientific Approaches</h3>
+                        <p>Several approaches are being used to develop climate-resistant crops:</p>
+                        <ul>
+                            <li><strong>Traditional Breeding:</strong> Crossing existing varieties with wild relatives that have desirable traits</li>
+                            <li><strong>Marker-Assisted Selection:</strong> Using genetic markers to identify and select for desirable traits</li>
+                            <li><strong>Genetic Engineering:</strong> Directly inserting genes that confer climate resilience</li>
+                            <li><strong>Gene Editing:</strong> Using CRISPR technology to precisely modify plant genomes</li>
+                            <li><strong>Speed Breeding:</strong> Accelerating breeding cycles using controlled environments</li>
+                        </ul>
+                        
+                        <h3>Success Stories</h3>
+                        <p><strong>Scuba Rice:</strong> Developed by the International Rice Research Institute, this variety can survive complete submergence for up to two weeks.</p>
+                        <p><strong>Drought-Tolerant Maize:</strong> Developed through the Drought Tolerant Maize for Africa project, these varieties have increased yields by 20-30% under drought conditions.</p>
+                        <p><strong>Heat-Tolerant Wheat:</strong> Australian researchers have developed wheat varieties that maintain grain quality at temperatures up to 35°C.</p>
+                        
+                        <h3>Challenges and Future Directions</h3>
+                        <p>While significant progress has been made, challenges remain including regulatory hurdles for genetically modified crops, ensuring smallholder farmers have access to improved varieties, and maintaining genetic diversity. Future research will likely focus on multi-trait resilience and developing crops for specific regional climate challenges.</p>
+                    `,
+                    comments: []
+                }
+            ],
+
+            health: [
+                {
+                    id: 1,
+                    title: "Benefits of Mediterranean Diet",
+                    excerpt: "How the Mediterranean diet improves heart health and longevity.",
+                    date: "2025-12-28",
+                    readTime: "7 min read",
+                    author: "Dr. Elena Martinez",
+                    category: "Health",
+                    image: "https://www.suprodirect.com/cdn-cgi/image/width=1000,height=480,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2025/07/shutterstock_2543469419-min.jpg",
+                    featured: true,
+                    content: `
+                        <h2>The Mediterranean Diet: A Blueprint for Health</h2>
+                        <p>The Mediterranean diet, inspired by traditional eating patterns of countries bordering the Mediterranean Sea, is consistently ranked as one of the healthiest diets in the world. Extensive research shows it offers significant benefits for heart health, weight management, and longevity.</p>
+                        <a href="https://www.bing.com/search?q=Benefits+of+Mediterranean+Diet&FORM=SSQNT1&PC=U531">go to site</a>
+
+                        
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Mediterranean Diet">
+                        
+                        <h3>Key Components of the Mediterranean Diet</h3>
+                        <p>The Mediterranean diet emphasizes:</p>
+                        <ul>
+                            <li><strong>Abundant Plant Foods:</strong> Fruits, vegetables, whole grains, legumes, nuts, and seeds</li>
+                            <li><strong>Healthy Fats:</strong> Olive oil as the primary fat source, replacing butter and other saturated fats</li>
+                            <li><strong>Moderate Fish & Poultry:</strong> Fish and seafood at least twice weekly, poultry in moderation</li>
+                            <li><strong>Limited Red Meat:</strong> Red meat consumed only occasionally</li>
+                            <li><strong>Dairy in Moderation:</strong> Cheese and yogurt in moderate amounts</li>
+                            <li><strong>Herbs & Spices:</strong> Used instead of salt to flavor foods</li>
+                            <li><strong>Red Wine in Moderation:</strong> With meals, if desired (optional)</li>
+                        </ul>
+                        
+                        <h3>Scientific Evidence for Health Benefits</h3>
+                        <p><strong>1. Heart Health:</strong> The PREDIMED study showed a 30% reduction in cardiovascular events among participants following a Mediterranean diet supplemented with extra-virgin olive oil or nuts.</p>
+                        <p><strong>2. Reduced Diabetes Risk:</strong> Research indicates the Mediterranean diet can reduce type 2 diabetes risk by up to 30%.</p>
+                        <p><strong>3. Brain Health:</strong> Studies suggest the diet may reduce cognitive decline and lower Alzheimer's disease risk.</p>
+                        <p><strong>4. Cancer Prevention:</strong> Associated with reduced risk of certain cancers, particularly breast and colorectal cancer.</p>
+                        <p><strong>5. Weight Management:</strong> Promotes sustainable weight loss and maintenance without calorie counting.</p>
+                        
+                        <h3>Mechanisms Behind the Benefits</h3>
+                        <p>The Mediterranean diet's effectiveness stems from multiple mechanisms:</p>
+                        <ul>
+                            <li><strong>Anti-inflammatory Effects:</strong> Rich in antioxidants and polyphenols that reduce inflammation</li>
+                            <li><strong>Improved Lipid Profile:</strong> Increases HDL (good) cholesterol and reduces LDL (bad) cholesterol</li>
+                            <li><strong>Better Blood Sugar Control:</strong> High fiber content slows glucose absorption</li>
+                            <li><strong>Gut Health Support:</strong> Promotes a healthy gut microbiome through fiber and fermented foods</li>
+                            <li><strong>Reduced Oxidative Stress:</strong> Antioxidants protect cells from damage</li>
+                        </ul>
+                        
+                        <h3>Practical Implementation Tips</h3>
+                        <p>To adopt a Mediterranean diet:</p>
+                        <p>1. Make vegetables the star of your plate</p>
+                        <p>2. Use olive oil instead of butter for cooking</p>
+                        <p>3. Choose whole grains over refined grains</p>
+                        <p>4. Eat fish at least twice a week</p>
+                        <p>5. Snack on nuts instead of processed snacks</p>
+                        <p>6. Flavor foods with herbs and spices instead of salt</p>
+                        <p>7. Enjoy meals with family and friends</p>
+                        
+                        <h3>Conclusion</h3>
+                        <p>The Mediterranean diet represents more than just a collection of foods—it's a lifestyle that emphasizes enjoyment of meals, physical activity, and social connections. Its proven health benefits, combined with its delicious and varied food choices, make it a sustainable and enjoyable approach to lifelong health.</p>
+                    `,
+                    comments: [
+                        { author: "Health Enthusiast", date: "2023-10-15", comment: "Started this diet 6 months ago and feel amazing!" },
+                        { author: "Nutritionist", date: "2023-10-16", comment: "Excellent summary of the research. The Mediterranean diet is evidence-based medicine through food." }
+                    ]
+                },
+                {
+                    id: 2,
+                    title: "Exercise for Longevity",
+                    excerpt: "How regular exercise can add years to your life.",
+                    date: "2025-12-28",
+                    readTime: "5 min read",
+                    author: "Dr. James Wilson",
+                    category: "Health",
+                    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    featured: true,
+                    content: `
+                        <h2>Exercise: The Fountain of Youth</h2>
+                        <p>Regular physical activity is one of the most powerful tools for extending lifespan and improving healthspan—the number of years we live in good health. Research consistently shows that exercise can add years to your life and life to your years.</p>
+                        
+                        <h3>How Much Exercise Do You Need?</h3>
+                        <p>According to the World Health Organization and major health organizations:</p>
+                        <ul>
+                            <li><strong>Adults (18-64):</strong> At least 150-300 minutes of moderate-intensity aerobic activity OR 75-150 minutes of vigorous-intensity activity weekly, plus muscle-strengthening activities 2+ days per week</li>
+                            <li><strong>Older Adults (65+):</strong> Same recommendations with added balance exercises to prevent falls</li>
+                            <li><strong>Children & Adolescents:</strong> At least 60 minutes of moderate-to-vigorous activity daily</li>
+                        </ul>
+                        
+                        <img src="https://images.unsplash.com/photo-1534367507877-0edd93bd013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Exercise for Longevity">
+                        
+                        <h3>Types of Exercise for Longevity</h3>
+                        <p>Different types of exercise contribute to longevity in different ways:</p>
+                        <p><strong>1. Aerobic Exercise:</strong> Improves cardiovascular health, reduces chronic disease risk</p>
+                        <p><strong>2. Strength Training:</strong> Maintains muscle mass, supports metabolism, prevents falls</p>
+                        <p><strong>3. Flexibility & Balance:</strong> Maintains mobility, prevents injuries</p>
+                        <p><strong>4. High-Intensity Interval Training (HIIT):</strong> Efficient way to improve fitness, even in small time commitments</p>
+                        
+                        <h3>The Science Behind Exercise and Longevity</h3>
+                        <p>Exercise promotes longevity through multiple biological mechanisms:</p>
+                        <ul>
+                            <li><strong>Telomere Protection:</strong> Physical activity helps preserve telomeres, the protective caps on chromosomes that shorten with age</li>
+                            <li><strong>Reduced Inflammation:</strong> Exercise lowers chronic inflammation, a key driver of aging</li>
+                            <li><strong>Improved Mitochondrial Function:</strong> Enhances cellular energy production</li>
+                            <li><strong>Enhanced Brain Health:</strong> Increases BDNF (brain-derived neurotrophic factor), supporting cognitive function</li>
+                            <li><strong>Better Stress Management:</strong> Reduces cortisol levels and improves resilience</li>
+                        </ul>
+                        
+                        <h3>Research Findings</h3>
+                        <p>Key studies demonstrate exercise's impact on longevity:</p>
+                        <p><strong>Harvard Alumni Study:</strong> Found that men who burned at least 2,000 calories per week through exercise had a 28% lower death rate</p>
+                        <p><strong>Nurses' Health Study:</strong> Showed that women who exercised regularly had a 50% lower risk of premature death</p>
+                        <p><strong>Lancet Study:</strong> Estimated that physical inactivity causes 6-10% of premature deaths from major non-communicable diseases</p>
+                        
+                        <h3>Practical Tips for Sustainable Exercise</h3>
+                        <p>1. Find activities you enjoy to increase adherence</p>
+                        <p>2. Start small and gradually increase intensity and duration</p>
+                        <p>3. Incorporate activity into daily life (walking meetings, taking stairs)</p>
+                        <p>4. Mix different types of exercise for comprehensive benefits</p>
+                        <p>5. Listen to your body and allow for recovery</p>
+                        <p>6. Consider social exercise (group classes, sports teams) for motivation</p>
+                        
+                        <h3>Conclusion</h3>
+                        <p>Regular exercise is arguably the most powerful longevity intervention available. It's never too late to start—even beginning exercise in later life provides significant benefits. The key is consistency and finding activities you enjoy enough to maintain throughout life.</p>
+                    `,
+                    comments: []
+                }
+            ],
+
+            education: [
+                {
+                    id: 1,
+                    title: "Online Learning Trends 2023",
+                    excerpt: "How online education is evolving post-pandemic.",
+                    date: "2025-12-28",
+                    readTime: "6 min read",
+                    author: "Professor Alan Turing",
+                    category: "Education",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWWO8GciLSz01bG0tHPZdUvv7lhVqULmi0VQ&s",
+                    featured: true,
+                    content: `
+                        <h2>The Evolution of Online Learning</h2>
+                        <p>The COVID-19 pandemic accelerated the adoption of online learning by years, if not decades. As we move forward, online education continues to evolve with new technologies, pedagogies, and business models shaping its future.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Online Learning">
+                        
+                        <h3>Key Trends Shaping Online Education</h3>
+                        <p><strong>1. Hybrid & Blended Learning:</strong> The future lies in combining the best of online and in-person education rather than choosing one over the other.</p>
+                        <p><strong>2. Microcredentials & Stackable Degrees:</strong> Short, focused courses that can be combined into full degrees are gaining popularity.</p>
+                        <p><strong>3. Artificial Intelligence:</strong> AI is personalizing learning experiences, automating administrative tasks, and providing intelligent tutoring.</p>
+                        <p><strong>4. Gamification:</strong> Game elements are being used to increase engagement and motivation in online courses.</p>
+                        <p><strong>5. Virtual & Augmented Reality:</strong> Immersive technologies are creating realistic learning environments for hands-on skills.</p>
+                        <p><strong>6. Social Learning Platforms:</strong> Emphasis on community, collaboration, and peer learning rather than isolated study.</p>
+                        
+                        <h3>The Rise of EdTech Companies</h3>
+                        <p>Educational technology companies are playing an increasingly important role:</p>
+                        <ul>
+                            <li><strong>Coursera, edX, Udemy:</strong> Massive Open Online Course (MOOC) platforms reaching millions</li>
+                            <li><strong>Duolingo, Khan Academy:</strong> Specialized platforms for language learning and K-12 education</li>
+                            <li><strong>MasterClass, Skillshare:</strong> Creator-led platforms emphasizing practical skills</li>
+                            <li><strong>Byju's, Chegg:</strong> Companies focusing on test preparation and homework help</li>
+                        </ul>
+                        
+                        <h3>Challenges and Opportunities</h3>
+                        <p><strong>Challenges:</strong></p>
+                        <ul>
+                            <li>Digital divide and access inequity</li>
+                            <li>Maintaining student engagement and motivation</li>
+                            <li>Ensuring academic integrity in online assessments</li>
+                            <li>Faculty training and support</li>
+                            <li>Quality assurance and accreditation</li>
+                        </ul>
+                        
+                        <p><strong>Opportunities:</strong></p>
+                        <ul>
+                            <li>Increased access to education globally</li>
+                            <li>Personalized learning at scale</li>
+                            <li>Lifelong learning and career transitions</li>
+                            <li>Data-driven insights into learning processes</li>
+                            <li>New revenue models for educational institutions</li>
+                        </ul>
+                        
+                        <h3>Future Predictions</h3>
+                        <p>Looking ahead to 2024 and beyond:</p>
+                        <p>1. <strong>AI Tutors:</strong> Every student will have access to personalized AI tutors</p>
+                        <p>2. <strong>Blockchain Credentials:</strong> Secure, verifiable digital credentials will replace traditional transcripts</p>
+                        <p>3. <strong>Learning Analytics:</strong> Real-time data will optimize learning pathways</p>
+                        <p>4. <strong>Corporate Learning:</strong> Companies will increasingly partner with educational institutions</p>
+                        <p>5. <strong>Global Classrooms:</strong> Students from different countries will learn together regularly</p>
+                        
+                        <h3>Conclusion</h3>
+                        <p>Online learning is not just a temporary response to the pandemic but a fundamental transformation of education. The trends of 2023 point toward a more flexible, personalized, and technology-enhanced learning future that can serve diverse learners throughout their lives.</p>
+                    `,
+                    comments: []
+                },
+                {
+                    id: 2,
+                    title: "The Future of EdTech",
+                    excerpt: "Artificial Intelligence and Machine Learning in modern education.",
+                    date: "2025-12-28",
+                    readTime: "5 min read",
+                    author: "Tech Educator",
+                    category: "Education",
+                    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    featured: true,
+                    content: `
+                        <h2>The Future of Educational Technology</h2>
+                        <p>As we move further into the digital age, educational technology (EdTech) is becoming an integral part of the learning experience. From AI-driven personalization to immersive virtual reality classrooms, the future of education is being reshaped by innovation.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Future EdTech">
+                        
+                        <h3>Artificial Intelligence in the Classroom</h3>
+                        <p>AI is revolutionizing how we teach and learn:</p>
+                        <ul>
+                            <li><strong>Personalized Learning Paths:</strong> AI algorithms adapt curriculum to individual student needs.</li>
+                            <li><strong>Intelligent Tutoring Systems:</strong> providing real-time feedback and support.</li>
+                            <li><strong>Automated Grading:</strong> freeing up teachers to focus on instruction and mentorship.</li>
+                        </ul>
+                        
+                        <h3>Immersive Learning with VR and AR</h3>
+                        <p>Virtual and Augmented Reality are bringing complex concepts to life, allowing students to explore history, science, and the arts in immersive 3D environments.</p>
+
+                        <h3>Conclusion</h3>
+                        <p>The integration of technology in education is not about replacing teachers, but empowering them with tools to enhance engagement and improve outcomes. The future is bright for learners of all ages.</p>
+                    `,
+                    comments: []
+                }
+            ],
+
+            business: [
+                {
+                    id: 1,
+                    title: "Cryptocurrency Regulations Update",
+                    excerpt: "New regulatory framework for digital currencies worldwide.",
+                    date: "2025-12-28",
+                    readTime: "8 min read",
+                    author: "Financial Analyst",
+                    category: "Business",
+                    image: "https://cdn.britannica.com/19/247219-050-555361A5/Auction-gavel-and-bitcoin-cryptocurrency-money-on-a-wooden-desk.jpg",
+                    featured: true,
+                    content: `
+                        <h2>The Global Regulatory Landscape for Cryptocurrencies</h2>
+                        <p>As cryptocurrencies move from niche investment to mainstream financial asset, governments and regulatory bodies worldwide are developing frameworks to govern their use, trading, and taxation. This article examines the latest regulatory developments across major economies.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Cryptocurrency Regulations">
+                        
+                        <h3>United States Regulatory Approach</h3>
+                        <p>The US has taken a multi-agency approach to cryptocurrency regulation:</p>
+                        <p><strong>SEC (Securities and Exchange Commission):</strong> Treats many cryptocurrencies as securities subject to existing securities laws</p>
+                        <p><strong>CFTC (Commodity Futures Trading Commission):</strong> Regulates cryptocurrency derivatives and considers Bitcoin a commodity</p>
+                        <p><strong>FinCEN (Financial Crimes Enforcement Network):</strong> Enforces anti-money laundering (AML) and know-your-customer (KYC) requirements</p>
+                        <p><strong>IRS (Internal Revenue Service):</strong> Treats cryptocurrency as property for tax purposes</p>
+                        
+                        <h3>European Union's MiCA Regulation</h3>
+                        <p>The Markets in Crypto-Assets (MiCA) regulation, expected to be fully implemented by 2024, establishes a comprehensive framework for crypto-assets in the EU. Key provisions include:</p>
+                        <ul>
+                            <li>Licensing requirements for crypto-asset service providers</li>
+                            <li>Consumer protection measures including a "right of withdrawal"</li>
+                            <li>Environmental sustainability disclosures for consensus mechanisms</li>
+                            <li>Stablecoin regulations with reserve requirements</li>
+                            <li>Harmonized rules across all EU member states</li>
+                        </ul>
+                        
+                        <h3>Asia-Pacific Regulatory Approaches</h3>
+                        <p><strong>Japan:</strong> Early adopter with comprehensive licensing system for crypto exchanges</p>
+                        <p><strong>Singapore:</strong> Progressive approach focusing on innovation while maintaining financial stability</p>
+                        <p><strong>China:</strong> Complete ban on cryptocurrency trading and mining (with exceptions for CBDC development)</p>
+                        <p><strong>Hong Kong:</strong> Developing comprehensive framework to become a crypto hub</p>
+                        <p><strong>India:</strong> Implementing taxation framework (30% tax on crypto gains) while developing comprehensive regulation</p>
+                        
+                        <h3>Central Bank Digital Currencies (CBDCs)</h3>
+                        <p>Over 90% of central banks worldwide are exploring CBDCs. Notable projects include:</p>
+                        <ul>
+                            <li><strong>Digital Yuan (China):</strong> Most advanced large-scale CBDC pilot with over 260 million wallets</li>
+                            <li><strong>Digital Euro (EU):</strong> Investigation phase with potential launch in 2026-2027</li>
+                            <li><strong>Digital Dollar (US):</strong> Research and discussion phase</li>
+                            <li><strong>e-Naira (Nigeria):</strong> First African CBDC launched in 2021</li>
+                            <li><strong>Project Hamilton (US):</strong> MIT/Fed research project exploring technical architectures</li>
+                        </ul>
+                        
+                        <h3>Taxation Policies Worldwide</h3>
+                        <p>Cryptocurrency taxation varies significantly by country:</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Country</th>
+                                    <th>Tax Treatment</th>
+                                    <th>Capital Gains Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>Property</td>
+                                    <td>0-37% (depending on holding period and income)</td>
+                                </tr>
+                                <tr>
+                                    <td>Germany</td>
+                                    <td>Private money</td>
+                                    <td>0% if held >1 year</td>
+                                </tr>
+                                <tr>
+                                    <td>Portugal</td>
+                                    <td>No tax on personal investment</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td>United Kingdom</td>
+                                    <td>Capital asset</td>
+                                    <td>10-20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Australia</td>
+                                    <td>Capital asset</td>
+                                    <td>Individual's marginal rate</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Future Regulatory Trends</h3>
+                        <p>1. <strong>DeFi Regulation:</strong> How to regulate decentralized finance protocols</p>
+                        <p>2. <strong>NFT Classification:</strong> Determining whether NFTs are securities, collectibles, or something else</p>
+                        <p>3. <strong>Crypto Banking:</strong> Traditional banks offering crypto services</p>
+                        <p>4. <strong>Global Coordination:</strong> Efforts through G20, FATF, and other international bodies</p>
+                        <p>5. <strong>Consumer Protection:</strong> Addressing scams, hacks, and market manipulation</p>
+                        
+                        <h3>Conclusion</h3>
+                        <p>The regulatory landscape for cryptocurrencies is rapidly evolving from a "Wild West" environment to a more structured framework. While approaches vary by jurisdiction, common themes include investor protection, financial stability, anti-money laundering, and tax compliance. As the industry matures, clearer regulations will likely bring more institutional investment and mainstream adoption.</p>
+                    `,
+                    comments: []
+                },
+                {
+                    id: 2,
+                    title: "The Future of Remote Work",
+                    excerpt: "How remote work is shaping the future of business operations.",
+                    date: "2025-12-28",
+                    readTime: "7 min read",
+                    author: "HR Specialist",
+                    category: "Business",
+                    image: "https://i0.wp.com/greatplacetowork.me/wp-content/uploads/2023/04/Future_of_remote_working.png?fit=2240%2C1260&ssl=1",
+                    featured: true,
+                    content: `
+                        <h2>Remote Work: The New Normal?</h2>
+                        <p>Remote work has transitioned from a temporary necessity to a permanent fixture in many industries. This shift offers flexibility for employees and potential cost savings for employers, but also presents challenges in maintaining culture and collaboration.</p>
+                        
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPYhM0irGiLY4mVk15kw5mCvfXabltfWc2sw&s" class="img-fluid" alt="Remote Work">
+                        
+                        <h3>Benefits of Remote Work</h3>
+                        <ul>
+                            <li><strong>Flexibility:</strong> Employees can better balance work and life commitments.</li>
+                            <li><strong>Talent Access:</strong> Companies can hire the best talent regardless of location.</li>
+                            <li><strong>Cost Reduction:</strong> Reduced need for physical office space.</li>
+                        </ul>
+                        
+                        <h3>Challenges to Overcome</h3>
+                        <p>Organizations must address isolation, communication barriers, and cybersecurity risks to fully thrive in a remote-first world.</p>
+                    `,
+                    comments: []
+                }
+            ],
+
+            celebrity: [
+                {
+                    id: 1,
+                    title: "Oscar Nominations Announced",
+                    excerpt: "Complete list of nominations for the 2023 Academy Awards.",
+                    date: "2025-12-28",
+                    readTime: "5 min read",
+                    author: "Entertainment Reporter",
+                    category: "Celebrity",
+                    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    featured: true,
+                    content: `
+                        <h2>2023 Academy Award Nominations: Complete Breakdown</h2>
+                        <p>The nominations for the 95th Academy Awards have been announced, with several films earning multiple nominations and a few surprises in major categories. This year's ceremony promises to be one of the most competitive in recent memory.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1489599809516-9827b6d1cf13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Oscar Awards">
+                        
+                        <h3>Best Picture Nominees</h3>
+                        <p>The ten films nominated for Best Picture are:</p>
+                        <ol>
+                            <li><strong>Everything Everywhere All at Once</strong> - 11 total nominations</li>
+                            <li><strong>The Banshees of Inisherin</strong> - 9 total nominations</li>
+                            <li><strong>All Quiet on the Western Front</strong> - 9 total nominations</li>
+                            <li><strong>Elvis</strong> - 8 total nominations</li>
+                            <li><strong>The Fabelmans</strong> - 7 total nominations</li>
+                            <li><strong>Top Gun: Maverick</strong> - 6 total nominations</li>
+                            <li><strong>Tár</strong> - 6 total nominations</li>
+                            <li><strong>Avatar: The Way of Water</strong> - 4 total nominations</li>
+                            <li><strong>Triangle of Sadness</strong> - 3 total nominations</li>
+                            <li><strong>Women Talking</strong> - 2 total nominations</li>
+                        </ol>
+                        
+                        <h3>Acting Categories</h3>
+                        <p><strong>Best Actor:</strong></p>
+                        <ul>
+                            <li>Colin Farrell - The Banshees of Inisherin</li>
+                            <li>Brendan Fraser - The Whale</li>
+                            <li>Austin Butler - Elvis</li>
+                            <li>Bill Nighy - Living</li>
+                            <li>Paul Mescal - Aftersun</li>
+                        </ul>
+                        
+                        <p><strong>Best Actress:</strong></p>
+                        <ul>
+                            <li>Cate Blanchett - Tár</li>
+                            <li>Michelle Yeoh - Everything Everywhere All at Once</li>
+                            <li>Ana de Armas - Blonde</li>
+                            <li>Michelle Williams - The Fabelmans</li>
+                            <li>Andrea Riseborough - To Leslie</li>
+                        </ul>
+                        
+                        <h3>Notable Snubs and Surprises</h3>
+                        <p><strong>Biggest Snubs:</strong></p>
+                        <ul>
+                            <li>Jordan Peele's "Nope" received zero nominations despite critical acclaim</li>
+                            <li>Tom Cruise was not nominated for Best Actor despite Top Gun: Maverick's success</li>
+                            <li>Danielle Deadwyler (Till) was unexpectedly left out of Best Actress category</li>
+                            <li>The Woman King was completely shut out despite strong early buzz</li>
+                        </ul>
+                        
+                        <p><strong>Pleasant Surprises:</strong></p>
+                        <ul>
+                            <li>Andrea Riseborough's grassroots campaign resulted in a Best Actress nomination</li>
+                            <li>Brian Tyree Henry received his first nomination for Causeway</li>
+                            <li>All Quiet on the Western Front exceeded expectations with 9 nominations</li>
+                            <li>RRR's "Naatu Naatu" received a Best Original Song nomination</li>
+                        </ul>
+                        
+                        <h3>History-Making Nominations</h3>
+                        <p>This year's nominations include several historic firsts:</p>
+                        <ul>
+                            <li><strong>Michelle Yeoh:</strong> First Asian actress nominated for Best Actress in 20 years</li>
+                            <li><strong>Angela Bassett:</strong> First Marvel performance nominated for an acting Oscar</li>
+                            <li><strong>Everything Everywhere All at Once:</strong> Most nominations ever for an A24 film</li>
+                            <li><strong>Ruth Carter:</strong> First Black woman with two career nominations in costume design</li>
+                            <li><strong>All Quiet on the Western Front:</strong> Most nominations for a German film</li>
+                        </ul>
+                        
+                        <h3>Predictions and Odds</h3>
+                        <p>According to industry experts and betting odds:</p>
+                        <p><strong>Best Picture:</strong> Everything Everywhere All at Once (2/1 favorite)</p>
+                        <p><strong>Best Director:</strong> Daniel Kwan & Daniel Scheinert - Everything Everywhere All at Once</p>
+                        <p><strong>Best Actor:</strong> Brendan Fraser - The Whale</p>
+                        <p><strong>Best Actress:</strong> Cate Blanchett - Tár (though Michelle Yeoh is closing the gap)</p>
+                        <p><strong>Best Supporting Actor:</strong> Ke Huy Quan - Everything Everywhere All at Once</p>
+                        <p><strong>Best Supporting Actress:</strong> Angela Bassett - Black Panther: Wakanda Forever</p>
+                        
+                        <h3>Ceremony Details</h3>
+                        <p>The 95th Academy Awards will be held on March 12, 2023, at the Dolby Theatre in Hollywood. Jimmy Kimmel returns as host for the third time. The ceremony will be broadcast live on ABC and streamed on various platforms.</p>
+                        
+                        <h3>Conclusion</h3>
+                        <p>This year's Oscar nominations reflect a diverse and international range of films, with recognition for both blockbuster hits and indie darlings. The competition is particularly fierce in the acting categories, making this one of the most unpredictable Oscar races in years.</p>
+                    `,
+                    comments: []
+                },
+                {
+                    id: 2,
+                    title: "Celebrity Philanthropy in 2023",
+                    excerpt: "Stars who are making a real difference through their charitable work.",
+                    date: "2025-12-28",
+                    readTime: "7 min read",
+                    author: "Entertainment Reporter",
+                    category: "Celebrity",
+                    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    featured: true,
+                    content: `
+                        <h2>Using Fame for Good</h2>
+                        <p>More than ever, celebrities are leveraging their platforms to advocate for important causes. From environmental protection to social justice, these stars are proving that influence can be a powerful force for change.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Celebrity Philanthropy">
+                        
+                        <h3>Leading the Charge</h3>
+                        <p>Several high-profile figures have launched foundation and initiatives this year that focus on direct impact and community empowerment.</p>
+                        
+                        <h3>Raising Awareness</h3>
+                        <p>Through social media and public appearances, celebrities are shedding light on underreported issues, driving both donations and policy discussions.</p>
+                    `,
+                    comments: []
+                }
+            ],
+
+            weather: [
+                {
+                    id: 1,
+                    title: "Climate Change Impact Report",
+                    excerpt: "Latest IPCC report on climate change impacts and adaptation.",
+                    date: "2025-12-28",
+                    readTime: "10 min read",
+                    author: "Climate Scientist",
+                    category: "Weather",
+                    image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    featured: true,
+                    content: `
+                        <h2>IPCC Sixth Assessment Report: Key Findings</h2>
+                        <p>The Intergovernmental Panel on Climate Change (IPCC) has released its Sixth Assessment Report, providing the most comprehensive assessment of climate change science to date. The report highlights the urgent need for accelerated action to limit global warming and adapt to its impacts.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Climate Change">
+                        
+                        <h3>Key Findings from the Report</h3>
+                        <p><strong>1. Human Influence on Climate Change:</strong> The report states it is "unequivocal that human influence has warmed the atmosphere, ocean and land."</p>
+                        <p><strong>2. Current Warming:</strong> Global surface temperature has increased by approximately 1.1°C since 1850-1900.</p>
+                        <p><strong>3. Extreme Weather Events:</strong> Human-induced climate change is already affecting many weather and climate extremes in every region across the globe.</p>
+                        <p><strong>4. Sea Level Rise:</strong> Global mean sea level increased by 0.20m between 1901 and 2018, with the rate accelerating.</p>
+                        <p><strong>5. Carbon Budget:</strong> To limit warming to 1.5°C with no or limited overshoot, the world has a remaining carbon budget of about 500 billion tonnes of CO2.</p>
+                        
+                        <h3>Regional Climate Impacts</h3>
+                        <p>The report provides detailed regional assessments of climate impacts:</p>
+                        <p><strong>North America:</strong> Increased heatwaves, wildfires, and compound extreme events</p>
+                        <p><strong>Europe:</strong> More frequent and intense heatwaves, with southern Europe experiencing reduced precipitation and agricultural productivity</p>
+                        <p><strong>Asia:</strong> Increased heavy precipitation and flooding, heat extremes, and glacier retreat in high mountains</p>
+                        <p><strong>Africa:</strong> Reduced food production, increased heat-related mortality, and vector-borne diseases</p>
+                        <p><strong>Small Islands:</strong> Sea level rise threatens freshwater resources, infrastructure, and livelihoods</p>
+                        
+                        <h3>Projected Changes at Different Warming Levels</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Warming Level</th>
+                                    <th>Projected Changes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.5°C</td>
+                                    <td>Increase in heatwaves, heavy precipitation, and droughts in some regions</td>
+                                </tr>
+                                <tr>
+                                    <td>2°C</td>
+                                    <td>More extreme weather events, biodiversity loss, and food security risks</td>
+                                </tr>
+                                <tr>
+                                    <td>3°C</td>
+                                    <td>Widespread biome shifts, coral reef extinction, and severe impacts on agriculture</td>
+                                </tr>
+                                <tr>
+                                    <td>4°C</td>
+                                    <td>Extreme risks to human systems and natural ecosystems</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Adaptation and Mitigation Strategies</h3>
+                        <p><strong>Adaptation:</strong> The report emphasizes the need for climate-resilient development, including:</p>
+                        <ul>
+                            <li>Early warning systems for extreme weather</li>
+                            <li>Climate-resilient infrastructure</li>
+                            <li>Ecosystem-based adaptation</li>
+                            <li>Improved water resource management</li>
+                            <li>Climate-smart agriculture</li>
+                        </ul>
+                        
+                        <p><strong>Mitigation:</strong> Key pathways to reduce emissions include:</p>
+                        <ul>
+                            <li>Rapid transition to renewable energy</li>
+                            <li>Energy efficiency improvements</li>
+                            <li>Electrification of transport and industry</li>
+                            <li>Carbon capture and storage</li>
+                            <li>Nature-based solutions (forest conservation, reforestation)</li>
+                        </ul>
+                        
+                        <h3>Economic Implications</h3>
+                        <p>The report highlights that the economic benefits of limiting warming to 2°C outweigh the costs of mitigation. However, climate impacts are already reducing economic growth and will increasingly do so, with developing countries disproportionately affected.</p>
+                        
+                        <h3>Conclusion and Call to Action</h3>
+                        <p>The IPCC report concludes that climate change is a threat to human well-being and planetary health. Any further delay in concerted global action will miss a brief and rapidly closing window to secure a liveable future. The report calls for:</p>
+                        <ol>
+                            <li>Rapid, deep, and sustained greenhouse gas emissions reductions</li>
+                            <li>Accelerated adaptation to reduce vulnerability to climate change</li>
+                            <li>Integration of climate action into sustainable development</li>
+                            <li>Increased climate finance from developed to developing countries</li>
+                            <li>Enhanced international cooperation</li>
+                        </ol>
+                        
+                        <p>The scientific evidence is clear: immediate and ambitious action is needed to limit the worst impacts of climate change and build a sustainable future for all.</p>
+                    `,
+                    comments: []
+                },
+                {
+                    id: 2,
+                    title: "Extreme Weather Preparedness",
+                    excerpt: "How to stay safe and prepared during severe weather events.",
+                    date: "2025-12-28",
+                    readTime: "6 min read",
+                    author: "Safety Expert",
+                    category: "Weather",
+                    image: "https://i.ytimg.com/vi/UqHGGmZfXZA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBIpih-M3VMPieXfQSb3vGAHmicDg",
+                    featured: true,
+                    content: `
+                        <h2>Preparing for the Unpredictable</h2>
+                        <p>With climate change intensifying weather patterns, being prepared for extreme weather is more critical than ever. From hurricanes to blizzards, knowing what to do can save lives.</p>
+                        
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdoKp8Tao5jojOOifhcFHY1thevQlbnJieQ&s" class="img-fluid" alt="Extreme Weather">
+                        
+                        <h3>Essential Emergency Kit Items</h3>
+                        <ul>
+                            <li><strong>Water:</strong> One gallon per person per day for at least three days.</li>
+                            <li><strong>Food:</strong> A three-day supply of non-perishable food.</li>
+                            <li><strong>Battery-powered radio:</strong> To stay informed if power goes out.</li>
+                            <li><strong>Flashlight:</strong> With extra batteries.</li>
+                            <li><strong>First aid kit:</strong> For treating minor injuries.</li>
+                        </ul>
+                        
+                        <h3>Making a Family Plan</h3>
+                        <p>Discuss where to meet if separated, how to communicate, and evacuation routes. Practice your plan regularly.</p>
+                    `,
+                    comments: []
+                }
+            ],
+
+            sports: [
+                {
+                    id: 1,
+                    title: "Ethiopian sport news",
+                    excerpt: "Host cities and schedule for the lig.",
+                    date: "2025-12-28",
+                    readTime: "6 min read",
+                    author: "Sports Journalist",
+                    category: "Sports",
+                    image: "https://assets.aws.worldathletics.org/eyJrZXkiOiI2MGRlZjkzMDYzNTZmM2IxMTVmZDE1NzcuanBnIiwiZWRpdHMiOnsiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjEwNSwid2lkdGgiOjI4MDAsImhlaWdodCI6MTAwMH0sInJlc2l6ZSI6eyJ3aWR0aCI6MjAwMCwiaGVpZ2h0Ijo3MTR9fX0=",
+                    featured: true,
+                    content: `
+                        <h2>2026 FIFA World Cup: Complete Guide to the Tournament</h2>
+                        <p>The 2026 FIFA World Cup will be the 23rd FIFA World Cup, jointly hosted by 16 cities across three North American countries: Canada, Mexico, and the United States. This will be the first World Cup to feature 48 teams and will be the largest sporting event ever held across multiple nations.</p>
+                        
+                        <img src="https://unificationprod.azurewebsites.net/media/ji0b33nk/epl-1920x1080.jpg" class="img-fluid" alt="World Cup 2026">
+                        
+                        <h3>Host Cities and Venues</h3>
+                        <p>The 16 host cities are divided among the three host countries:</p>
+                        
+                        <p><strong>United States (11 cities):</strong></p>
+                        <ul>
+                            <li><strong>Atlanta, Georgia:</strong> Mercedes-Benz Stadium (capacity: 71,000)</li>
+                            <li><strong>Boston, Massachusetts:</strong> Gillette Stadium (capacity: 65,878)</li>
+                            <li><strong>Dallas, Texas:</strong> AT&T Stadium (capacity: 80,000)</li>
+                            <li><strong>Houston, Texas:</strong> NRG Stadium (capacity: 72,220)</li>
+                            <li><strong>Kansas City, Missouri:</strong> Arrowhead Stadium (capacity: 76,416)</li>
+                            <li><strong>Los Angeles, California:</strong> SoFi Stadium (capacity: 70,240)</li>
+                            <li><strong>Miami, Florida:</strong> Hard Rock Stadium (capacity: 64,767)</li>
+                            <li><strong>New York/New Jersey:</strong> MetLife Stadium (capacity: 82,500)</li>
+                            <li><strong>Philadelphia, Pennsylvania:</strong> Lincoln Financial Field (capacity: 69,796)</li>
+                            <li><strong>San Francisco Bay Area:</strong> Levi's Stadium (capacity: 68,500)</li>
+                            <li><strong>Seattle, Washington:</strong> Lumen Field (capacity: 69,000)</li>
+                        </ul>
+                        
+                        <p><strong>Canada (2 cities):</strong></p>
+                        <ul>
+                            <li><strong>Toronto, Ontario:</strong> BMO Field (capacity: 45,736, expandable)</li>
+                            <li><strong>Vancouver, British Columbia:</strong> BC Place (capacity: 54,500)</li>
+                        </ul>
+                        
+                        <p><strong>Mexico (3 cities):</strong></p>
+                        <ul>
+                            <li><strong>Guadalajara, Jalisco:</strong> Estadio Akron (capacity: 48,071)</li>
+                            <li><strong>Mexico City:</strong> Estadio Azteca (capacity: 87,523) - First stadium to host three World Cups</li>
+                            <li><strong>Monterrey, Nuevo León:</strong> Estadio BBVA (capacity: 53,500)</li>
+                        </ul>
+                        
+                        <h3>Tournament Format</h3>
+                        <p>The 2026 World Cup will feature a new format:</p>
+                        <p><strong>Number of Teams:</strong> 48 (increased from 32)</p>
+                        <p><strong>Number of Matches:</strong> 104 (increased from 64)</p>
+                        <p><strong>Group Stage:</strong> 12 groups of 4 teams each</p>
+                        <p><strong>Knockout Stage:</strong> Top 2 teams from each group plus 8 best third-place teams advance to round of 32</p>
+                        <p><strong>Tournament Duration:</strong> Approximately 40 days</p>
+                        
+                        <h3>Key Dates and Schedule</h3>
+                        <p><strong>Opening Match:</strong> June 11, 2026 (Estadio Azteca, Mexico City)</p>
+                        <p><strong>Group Stage:</strong> June 11 - July 2, 2026</p>
+                        <p><strong>Round of 32:</strong> July 3 - July 6, 2026</p>
+                        <p><strong>Round of 16:</strong> July 7 - July 10, 2026</p>
+                        <p><strong>Quarter-finals:</strong> July 13 - July 14, 2026</p>
+                        <p><strong>Semi-finals:</strong> July 17 - July 18, 2026 (Atlanta and Dallas)</p>
+                        <p><strong>Third Place Match:</strong> July 21, 2026 (Miami)</p>
+                        <p><strong>Final:</strong> July 19, 2026 (MetLife Stadium, New York/New Jersey)</p>
+                        
+                        <h3>Qualification</h3>
+                        <p>The 48 qualification spots are allocated as follows:</p>
+                        <ul>
+                            <li>AFC (Asia): 8.5 slots (increased from 4.5)</li>
+                            <li>CAF (Africa): 9.5 slots (increased from 5)</li>
+                            <li>CONCACAF (North America): 6.5 slots (increased from 3.5, plus 3 hosts automatically qualified)</li>
+                            <li>CONMEBOL (South America): 6.5 slots (increased from 4.5)</li>
+                            <li>OFC (Oceania): 1.5 slots (increased from 0.5)</li>
+                            <li>UEFA (Europe): 16 slots (increased from 13)</li>
+                        </ul>
+                        
+                        <h3>Economic Impact</h3>
+                        <p>The 2026 World Cup is expected to generate significant economic benefits:</p>
+                        <ul>
+                            <li><strong>Total Economic Impact:</strong> Estimated $5 billion across host nations</li>
+                            <li><strong>Tourism Revenue:</strong> Expected 5-6 million visitors</li>
+                            <li><strong>Job Creation:</strong> Approximately 40,000 temporary jobs</li>
+                            <li><strong>Infrastructure Investment:</strong> Billions in stadium upgrades and transportation improvements</li>
+                            <li><strong>Media Rights:</strong> Expected to break records with global viewership</li>
+                        </ul>
+                        
+                        <h3>Innovations and Legacy</h3>
+                        <p>The 2026 World Cup will feature several innovations:</p>
+                        <ul>
+                            <li><strong>Sustainability Focus:</strong> Carbon-neutral tournament goal</li>
+                            <li><strong>Technology:</strong> Enhanced VAR, semi-automated offside technology, and digital ticketing</li>
+                            <li><strong>Accessibility:</strong> Focus on making events accessible to all fans</li>
+                            <li><strong>Legacy Programs:</strong> Community soccer development programs across host cities</li>
+                            <li><strong>Transportation:</strong> Improved inter-city transportation links</li>
+                        </ul>
+                        
+                        <h3>Conclusion</h3>
+                        <p>The 2026 FIFA World Cup represents a historic moment for soccer in North America and the global game. With an expanded format, unprecedented geographical spread, and significant investments in infrastructure and sustainability, the tournament aims to be the most inclusive, innovative, and impactful World Cup in history.</p>
+                    `,
+                    comments: []
+                },
+                {
+                    id: 2,
+                    title: "The Science of Elite Athlete Training",
+                    excerpt: "How modern science is revolutionizing sports performance and recovery.",
+                    date: "2025-12-28",
+                    readTime: "8 min read",
+                    author: "Sports Scientist",
+                    category: "Sports",
+                    image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    featured: true,
+                    content: `
+                        <h2>Pushing the Limits of Human Potential</h2>
+                        <p>In the world of elite sports, the difference between gold and silver is often measured in milliseconds. Today, athletes turn to science to gain that competitive edge.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Athlete Training">
+                        
+                        <h3>Data-Driven Performance</h3>
+                        <p>Wearable technology tracks everything from heart rate variability to sleep quality, allowing coaches to tailor training loads precisely to an athlete's recovery status.</p>
+                        
+                        <h3>Nutrition and Recovery</h3>
+                        <p>It's not just about training harder; it's about recovering smarter. Advanced nutrition plans and cryotherapy chambers are standard tools for today's champions.</p>
+                    `,
+                    comments: []
+                }
+            ],
+        };
+
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Setup event listeners
+            setupEventListeners();
+
+            // Load featured articles
+            loadFeaturedArticles();
+
+            // Initialize Auth UI
+            initAuth();
+
+            // Initialize Quiz
+            initQuiz();
+
+            // Show home section by default
+            showSection('home');
+        });
+
+        // Initialize Authentication State
+        function initAuth() {
+            if (currentUser) {
+                document.getElementById('auth-nav-item').classList.add('d-none');
+                document.getElementById('user-nav-item').classList.remove('d-none');
+                document.getElementById('nav-username').textContent = currentUser.name.split(' ')[0];
+
+                // Add Logout listener
+                document.getElementById('logout-btn').addEventListener('click', handleLogout);
+            } else {
+                document.getElementById('auth-nav-item').classList.remove('d-none');
+                document.getElementById('user-nav-item').classList.add('d-none');
+            }
+
+            // Setup Form Listeners
+            setupAuthFormListeners();
+        }
+
+        function setupAuthFormListeners() {
+            // Login Form
+            const loginForm = document.getElementById('login-form');
+            if (loginForm) {
+                loginForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const username = document.getElementById('login-username').value;
+                    const pass = document.getElementById('login-password').value;
+
+                    const user = users.find(u => u.username === username && u.password === pass);
+                    if (user) {
+                        currentUser = user;
+                        localStorage.setItem('currentUser', JSON.stringify(user));
+                        location.reload();
+                    } else {
+                        alert('Invalid username or password');
+                    }
+                });
+            }
+
+            // Register Form
+            const regForm = document.getElementById('register-form');
+            if (regForm) {
+                regForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById('reg-name').value;
+                    const username = document.getElementById('reg-username').value;
+                    const password = document.getElementById('reg-password').value;
+
+                    if (users.find(u => u.username === username)) {
+                        alert('Username already exists');
+                        return;
+                    }
+
+                    const newUser = { name, username, password };
+                    users.push(newUser);
+                    localStorage.setItem('users', JSON.stringify(users));
+
+                    currentUser = newUser;
+                    localStorage.setItem('currentUser', JSON.stringify(newUser));
+                    location.reload();
+                });
+            }
+        }
+
+        function handleLogout() {
+            localStorage.removeItem('currentUser');
+            location.reload();
+        }
+
+        function toggleFavorite(category, articleId, e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if (!currentUser) {
+                const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+                loginModal.show();
+                return;
+            }
+
+            const userKey = currentUser.username;
+            if (!favorites[userKey]) favorites[userKey] = [];
+
+            const index = favorites[userKey].findIndex(f => f.category === category && f.id === articleId);
+
+            if (index > -1) {
+                favorites[userKey].splice(index, 1);
+                e.currentTarget.classList.remove('active');
+            } else {
+                favorites[userKey].push({ category, id: articleId });
+                e.currentTarget.classList.add('active');
+            }
+
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+
+            // If we are in the favorites section, refresh it
+            if (document.getElementById('favorites').classList.contains('active-section')) {
+                loadFavorites();
+            }
+        }
+
+        function isFavorited(category, articleId) {
+            if (!currentUser || !favorites[currentUser.username]) return false;
+            return favorites[currentUser.username].some(f => f.category === category && f.id === articleId);
+        }
+
+        function loadFavorites() {
+            const container = document.getElementById('favorites-articles');
+            const userKey = currentUser ? currentUser.username : null;
+            const userFavorites = userKey ? (favorites[userKey] || []) : [];
+
+            if (userFavorites.length === 0) {
+                container.innerHTML = `
+                    <div class="col-12 text-center py-5">
+                        <i class="fas fa-star display-4 text-muted mb-3"></i>
+                        <h4>No favorites yet</h4>
+                        <p class="text-muted">Click the star icon on articles to save them here for quick access.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = '';
+            userFavorites.forEach(fav => {
+                const article = articleDatabase[fav.category].find(a => a.id === fav.id);
+                if (article) {
+                    const categoryClass = `${fav.category}-badge`;
+                    html += generateArticleCardHtml(article, fav.category, categoryClass);
+                }
+            });
+
+            container.innerHTML = html;
+            attachArticleListeners(container);
+        }
+
+        function generateArticleCardHtml(article, category, categoryClass) {
+            const activeClass = isFavorited(category, article.id) ? 'active' : '';
+            return `
+                <div class="col-md-6 col-lg-4">
+                    <div class="article-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="${article.image}" class="article-img" alt="${article.title}">
+                            <span class="article-category ${categoryClass}">${article.category}</span>
+                            <div class="favorite-btn ${activeClass}" onclick="toggleFavorite('${category}', ${article.id}, event)">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="font-weight-bold mb-3">${article.title}</h5>
+                            <p class="text-muted small mb-4">${article.excerpt}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="far fa-clock me-1"></i>${article.readTime}</small>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill px-3 read-more-btn" 
+                                        data-category="${category}" 
+                                        data-id="${article.id}">
+                                    Read Article
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function attachArticleListeners(container) {
+            container.querySelectorAll('.read-more-btn').forEach(button => {
+                button.addEventListener('click', function () {
+                    const category = this.getAttribute('data-category');
+                    const id = parseInt(this.getAttribute('data-id'));
+                    showArticleDetail(category, id);
+                });
+            });
+        }
+
+        // Setup all event listeners
+        function setupEventListeners() {
+            // Search and Sort inputs
+            document.querySelectorAll('.search-input').forEach(input => {
+                input.addEventListener('input', function () {
+                    const category = this.getAttribute('data-category');
+                    loadSectionArticles(category);
+                });
+            });
+
+            document.querySelectorAll('.sort-select').forEach(select => {
+                select.addEventListener('change', function () {
+                    const category = this.getAttribute('data-category');
+                    loadSectionArticles(category);
+                });
+            });
+
+            // Navigation links
+            document.querySelectorAll('.nav-link, button[data-section], .category-card').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const sectionId = this.getAttribute('data-section');
+                    showSection(sectionId);
+
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(navLink => {
+                        navLink.classList.remove('active');
+                    });
+
+                    if (this.classList.contains('nav-link')) {
+                        this.classList.add('active');
+                    }
+                });
+            });
+
+            // Home link
+            document.getElementById('home-link').addEventListener('click', function (e) {
+                e.preventDefault();
+                showSection('home');
+            });
+
+            // Newsletter subscription
+            document.getElementById('subscribe-btn').addEventListener('click', subscribeNewsletter);
+        }
+
+        // Show specific section
+        function showSection(sectionId) {
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active-section');
+                section.style.display = 'none';
+            });
+
+            // Hide article detail sections
+            document.querySelectorAll('.article-detail-section').forEach(section => {
+                section.classList.remove('active');
+                section.style.display = 'none';
+            });
+
+            // Show selected section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active-section');
+                targetSection.style.display = 'block';
+
+                // Load articles for the section
+                if (sectionId === 'favorites') {
+                    loadFavorites();
+                } else if (sectionId !== 'home') {
+                    loadSectionArticles(sectionId);
+                }
+
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Load featured articles on home page
+        function loadFeaturedArticles() {
+            const container = document.getElementById('featured-articles');
+            let featuredArticles = [];
+
+            // Collect featured articles from all categories
+            Object.keys(articleDatabase).forEach(category => {
+                const categoryArticles = articleDatabase[category];
+                const featured = categoryArticles.filter(article => article.featured);
+                featuredArticles = featuredArticles.concat(featured.slice(0, 2));
+            });
+
+            // Shuffle and take 6 articles
+            const shuffled = featuredArticles.sort(() => 0.5 - Math.random()).slice(0, 6);
+
+            let html = '';
+            shuffled.forEach(article => {
+                const categoryClass = `${article.category.toLowerCase()}-badge`;
+                html += generateArticleCardHtml(article, article.category.toLowerCase(), categoryClass);
+            });
+
+            container.innerHTML = html;
+            attachArticleListeners(container);
+        }
+
+        // Load articles for a specific section
+        function loadSectionArticles(sectionId) {
+            const container = document.getElementById(`${sectionId}-articles`);
+            let articles = articleDatabase[sectionId] || [];
+
+            // Get Search and Sort values
+            const searchInput = document.getElementById(`search-${sectionId}`);
+            const sortSelect = document.getElementById(`sort-${sectionId}`);
+
+            // Filter
+            if (searchInput && searchInput.value) {
+                const term = searchInput.value.toLowerCase();
+                articles = articles.filter(a =>
+                    a.title.toLowerCase().includes(term) ||
+                    a.excerpt.toLowerCase().includes(term)
+                );
+            }
+
+            // Sort
+            if (sortSelect) {
+                const sortValue = sortSelect.value;
+                articles = [...articles]; // Clone to avoid mutating original
+
+                if (sortValue === 'newest') {
+                    articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+                } else if (sortValue === 'oldest') {
+                    articles.sort((a, b) => new Date(a.date) - new Date(b.date));
+                } else if (sortValue === 'az') {
+                    articles.sort((a, b) => a.title.localeCompare(b.title));
+                } else if (sortValue === 'za') {
+                    articles.sort((a, b) => b.title.localeCompare(a.title));
+                } else if (sortValue === 'popular') {
+                    // Assuming featured articles are 'popular', or random for demo
+                    articles.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+                }
+            }
+
+            let html = '';
+            if (articles.length === 0) {
+                html = `
+                    <div class="col-12 text-center py-5">
+                        <i class="fas fa-search display-4 text-muted mb-3"></i>
+                        <h4>No articles found</h4>
+                        <p class="text-muted">Try adjusting your search or category.</p>
+                    </div>
+                `;
+            } else {
+                articles.forEach(article => {
+                    const categoryClass = `${article.category.toLowerCase()}-badge`;
+                    html += generateArticleCardHtml(article, sectionId, categoryClass);
+                });
+            }
+
+            container.innerHTML = html;
+            attachArticleListeners(container);
+        }
+
+        // Show article detail page
+        function showArticleDetail(category, articleId) {
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active-section');
+                section.style.display = 'none';
+            });
+
+            // Get article data
+            const articles = articleDatabase[category];
+            const article = articles.find(a => a.id === articleId);
+
+            if (!article) {
+                alert('Article not found!');
+                return;
+            }
+
+            // Create or update article detail section
+            let articleSection = document.getElementById(`article-${category}-${articleId}`);
+
+            if (!articleSection) {
+                articleSection = document.createElement('div');
+                articleSection.className = 'article-detail-section';
+                articleSection.id = `article-${category}-${articleId}`;
+                document.getElementById('article-detail-container').appendChild(articleSection);
+            }
+
+            // Generate article detail HTML
+            const categoryColor = getCategoryColor(category);
+            const videoUrl = getVideoForArticle(category, article.id);
+
+            articleSection.innerHTML = `
+                <div class="article-header" style="background: linear-gradient(135deg, ${categoryColor} 0%, ${darkenColor(categoryColor, 20)} 100%);">
+                    <div class="container">
+                        <a href="#" class="back-to-section" data-section="${category}">
+                            <i class="fas fa-arrow-left me-2"></i> Back to ${category.charAt(0).toUpperCase() + category.slice(1)}
+                        </a>
+                        <h1 class="article-title">${article.title}</h1>
+                        <div class="article-meta">
+                            <span><i class="fas fa-user me-1"></i> ${article.author}</span>
+                            <span><i class="fas fa-calendar me-1"></i> ${article.date}</span>
+                            <span><i class="fas fa-clock me-1"></i> ${article.readTime}</span>
+                            <span><i class="fas fa-tag me-1"></i> ${article.category}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="article-content">
+                                ${article.content}
+                            </div>
+
+                            <div class="mt-5 mb-5">
+                                <h4>Related Video</h4>
+                                ${getVideoPlayerHtml(videoUrl)}
+                            </div>
+                            
+                            <div class="comment-section">
+                                <h3>Comments (${article.comments.length})</h3>
+                                ${article.comments.length > 0 ?
+                    article.comments.map(comment => `
+                                        <div class="comment">
+                                            <div class="comment-author">${comment.author}</div>
+                                            <div class="comment-date">${comment.date}</div>
+                                            <p>${comment.comment}</p>
+                                        </div>
+                                    `).join('') :
+                    '<p>No comments yet. Be the first to comment!</p>'
+                }
+                                
+                                <div class="mt-4">
+                                    <h4>Add a Comment</h4>
+                                    <form id="comment-form">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea class="form-control" rows="3" placeholder="Your Comment" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit Comment</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="article-sidebar">
+                                <div class="card mb-4">
+                                    <div class="card-header bg-primary text-white">
+                                        <h5 class="mb-0">About the Author</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6>${article.author}</h6>
+                                        <p class="small">Expert in ${article.category} with years of experience writing and researching in this field.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-header bg-primary text-white">
+                                        <h5 class="mb-0">Related Articles</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        ${getRelatedArticles(category, articleId)}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Show article section
+            articleSection.classList.add('active');
+            articleSection.style.display = 'block';
+
+            // Add event listener to back button
+            articleSection.querySelector('.back-to-section').addEventListener('click', function (e) {
+                e.preventDefault();
+                showSection(category);
+            });
+
+            // Add event listeners to Related Articles
+            articleSection.querySelectorAll('.related-article-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const category = this.getAttribute('data-category');
+                    const id = parseInt(this.getAttribute('data-id'));
+                    showArticleDetail(category, id);
+                });
+            });
+
+            // Add event listener to comment form
+            const commentForm = articleSection.querySelector('#comment-form');
+            if (commentForm) {
+                commentForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const name = this.querySelector('input').value;
+                    const comment = this.querySelector('textarea').value;
+
+                    if (name && comment) {
+                        // In a real app, this would send to a server
+                        alert(`Thank you for your comment, ${name}!`);
+                        this.reset();
+                    }
+                });
+            }
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Get related articles for sidebar
+        function getRelatedArticles(category, currentArticleId) {
+            const articles = articleDatabase[category];
+            const related = articles.filter(a => a.id !== currentArticleId).slice(0, 3);
+
+            if (related.length === 0) {
+                return '<p class="text-muted">No related articles available.</p>';
+            }
+
+            let html = '';
+            related.forEach(article => {
+                html += `
+                    <div class="related-article">
+                        <img src="${article.image}" alt="${article.title}">
+                        <div>
+                            <h6><a href="#" class="text-dark related-article-link" data-category="${category}" data-id="${article.id}">${article.title}</a></h6>
+                            <small class="text-muted">${article.date}</small>
+                        </div>
+                    </div>
+                `;
+            });
+
+            return html;
+        }
+
+        // Helper function to get video for article
+        function getVideoForArticle(category, articleId) {
+            const videoLibrary = {
+
+                agriculture: [
+                    "https://www.youtube.com/watch?v=9SouA4kxCmU",// Vertical Farming
+                    "https://www.youtube.com/watch?v=bRkSryHMvu0",
+                    "https://www.youtube.com/watch?v=m0FKXKzJEPQ"// Modern Agriculture
+                ],
+                health: [
+                    "https://www.youtube.com/watch?v=jYZ_yf2LBu4",
+                    "https://www.youtube.com/watch?v=jplpqKXdnyQ"
+                ],
+                education: [
+                    "https://www.youtube.com/watch?v=Dab0OMdDEos",
+                    "https://www.youtube.com/watch?v=3NiVLHd2g9U"
+                ],
+                business: [
+                    "https://www.youtube.com/watch?v=98871ONZiPs",
+                    "https://www.youtube.com/watch?v=gCZODUambkE"
+                ],
+                celebrity: [
+                    "https://www.youtube.com/watch?v=h3WmryGnDPw",
+                    "https://www.youtube.com/watch?v=h3WmryGnDPw"
+                ],
+                weather: [
+                    "https://www.youtube.com/watch?v=G4H1N_yXBiA",
+                    "https://www.youtube.com/watch?v=G4H1N_yXBiA"
+                ],
+                sports: [
+                    "https://www.youtube.com/watch?v=aI_SZLipJb0",
+                    "https://www.youtube.com/watch?v=aI_SZLipJb0"
+                ],
+                defaults: [
+                    "https://www.youtube.com/watch?v=El68Fb8qa2A",
+                    "https://www.youtube.com/watch?v=El68Fb8qa2A"
+                ]
+            };
+
+            const videos = videoLibrary[category] || videoLibrary.defaults;
+            // Use articleId to deterministically select a video
+            const index = articleId % videos.length;
+            return videos[index];
+        }
+
+        function getVideoPlayerHtml(videoUrl) {
+            if (videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be')) {
+                // Handle YouTube Embeds
+                let embedUrl = videoUrl;
+                if (!videoUrl.includes('/embed/')) {
+                    // Simple conversion for standard links (this is a basic handler)
+                    // Ideally, use the ones manually set in library as full embed URLs
+                    // But for robustness:
+                    const videoId = videoUrl.split('v=')[1] || videoUrl.split('/').pop();
+                    embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                }
+
+                return `
+                    <div class="ratio ratio-16x9 rounded-xl overflow-hidden shadow-medium">
+                        <iframe src="${embedUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                `;
+            } else {
+                // Handle Standard MP4s
+                return `
+                    <div class="ratio ratio-16x9 rounded-xl overflow-hidden shadow-medium">
+                        <video controls>
+                            <source src="${videoUrl}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                `;
+            }
+        }
+
+        // Helper function to get category color
+        function getCategoryColor(category) {
+            const colors = {
+                'agriculture': '#27ae60',
+                'health': '#e74c3c',
+                'education': '#9b59b6',
+                'business': '#3498db',
+                'celebrity': '#f39c12',
+                'weather': '#1abc9c',
+                'sports': '#e67e22'
+            };
+            return colors[category] || '#3498db';
+        }
+
+        // Helper function to darken color
+        function darkenColor(color, percent) {
+            const num = parseInt(color.replace('#', ''), 16);
+            const amt = Math.round(2.55 * percent);
+            const R = (num >> 16) - amt;
+            const G = (num >> 8 & 0x00FF) - amt;
+            const B = (num & 0x0000FF) - amt;
+            return '#' + (
+                0x1000000 +
+                (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 +
+                (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 +
+                (B < 255 ? B < 1 ? 0 : B : 255)
+            ).toString(16).slice(1);
+        }
+
+        // Quiz Logic
+        const quizQuestions = [
+            {
+                question: "What is a key benefit of online learning?",
+                options: ["Reduced flexibility", "Higher cost", "Learn at your own pace", "Less content"],
+                correct: 2
+            },
+            {
+                question: "Which technology is transforming education with personalized tutoring?",
+                options: ["Blockchain", "Artificial Intelligence (AI)", "5G Networks", "3D Printing"],
+                correct: 1
+            },
+            {
+                question: "What is 'Blended Learning'?",
+                options: ["Learning only online", "Learning only in-person", "Combining online and in-person learning", "Learning without a teacher"],
+                correct: 2
+            },
+            {
+                question: "Which of these is a popular MOOC platform?",
+                options: ["Coursera", "Netflix", "Amazon", "Spotify"],
+                correct: 0
+            },
+            {
+                question: "Gamification in education aims to increase...",
+                options: ["Stress", "Engagement and Motivation", "Homework load", "Exam difficulty"],
+                correct: 1
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let quizScore = 0;
+
+        function initQuiz() {
+            const startBtn = document.getElementById('start-quiz-btn');
+            if (startBtn) {
+                startBtn.addEventListener('click', startQuiz);
+            }
+        }
+
+        function startQuiz() {
+            currentQuestionIndex = 0;
+            quizScore = 0;
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const container = document.getElementById('education-quiz-container');
+            const question = quizQuestions[currentQuestionIndex];
+
+            container.innerHTML = `
+                <div class="text-center fade-in">
+                    <h5 class="text-muted mb-3">Question ${currentQuestionIndex + 1} of ${quizQuestions.length}</h5>
+                    <h4 class="mb-4 font-weight-bold">${question.question}</h4>
+                    <div class="d-grid gap-3 col-md-8 mx-auto">
+                        ${question.options.map((option, index) => `
+                            <button class="btn btn-outline-primary p-3 text-start quiz-option" onclick="checkAnswer(${index})">
+                                ${index + 1}. ${option}
+                            </button>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function checkAnswer(selectedIndex) {
+            const question = quizQuestions[currentQuestionIndex];
+            const container = document.getElementById('education-quiz-container');
+
+            const isCorrect = selectedIndex === question.correct;
+            if (isCorrect) quizScore++;
+
+            const feedbackColor = isCorrect ? 'text-success' : 'text-danger';
+            const feedbackIcon = isCorrect ? 'fa-check-circle' : 'fa-times-circle';
+            const feedbackText = isCorrect ? 'Correct!' : `Wrong! The correct answer was: ${question.options[question.correct]}`;
+
+            container.innerHTML = `
+                <div class="text-center fade-in">
+                    <div class="mb-4 display-4 ${feedbackColor}">
+                        <i class="fas ${feedbackIcon}"></i>
+                    </div>
+                    <h3 class="${feedbackColor} mb-3">${feedbackText}</h3>
+                    <button class="btn btn-primary btn-lg mt-3" onclick="nextQuestion()">
+                        ${currentQuestionIndex < quizQuestions.length - 1 ? 'Next Question' : 'See Results'}
+                    </button>
+                </div>
+            `;
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quizQuestions.length) {
+                showQuestion();
+            } else {
+                showQuizResults();
+            }
+        }
+
+        function showQuizResults() {
+            const container = document.getElementById('education-quiz-container');
+            const percentage = (quizScore / quizQuestions.length) * 100;
+            let message = '';
+            let icon = '';
+
+            if (percentage === 100) {
+                message = "Perfect Score! You're an expert!";
+                icon = "fa-trophy text-warning";
+            } else if (percentage >= 80) {
+                message = "Great Job! You know your stuff.";
+                icon = "fa-thumbs-up text-primary";
+            } else if (percentage >= 60) {
+                message = "Good effort! Keep learning.";
+                icon = "fa-book-reader text-info";
+            } else {
+                message = "Keep reading articles to improve your score.";
+                icon = "fa-lightbulb text-secondary";
+            }
+
+            container.innerHTML = `
+                <div class="text-center fade-in">
+                    <div class="mb-4 display-3">
+                        <i class="fas ${icon}"></i>
+                    </div>
+                    <h2 class="mb-3">Quiz Complete!</h2>
+                    <h4 class="mb-4">Your Score: ${quizScore} / ${quizQuestions.length} (${percentage}%)</h4>
+                    <p class="lead mb-4">${message}</p>
+                    <button class="btn btn-primary btn-lg rounded-pill px-5" onclick="startQuiz()">Retake Quiz</button>
+                </div>
+            `;
+        }
+
+        // Newsletter subscription
+        function subscribeNewsletter() {
+            const email = document.getElementById('newsletter-email').value;
+
+            if (!email || !email.includes('@')) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            alert(`Thank you for subscribing with ${email}! You'll receive our weekly article digest.`);
+            document.getElementById('newsletter-email').value = '';
+        }
+    </script>
+</body>
+
+</html>
